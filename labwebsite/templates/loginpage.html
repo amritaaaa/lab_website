@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href={% static "/css/loginpage.css" %}>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+
+
+
+<body class="bg-light">
+  <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="card" style="width: 100%; max-width: 400px;">
+      <div class="card-body">
+        <h4 class="card-title text-center mb-4">Login</h4>
+ <form action ="/login"  method = "post">
+    {% csrf_token %}
+  <tr>
+    <th><label for="id_username">Username:</label></th>
+    <td>
+
+      <input type="email" name="username" required id="id_username">
+
+
+    </td>
+  </tr>
+
+  <tr>
+    <th><label for="id_password">Password:</label></th>
+    <td>
+
+      <input type="password" name="password" required id="id_password">
+
+
+
+
+    </td>
+  </tr>
+    <button type="submit" class="btn btn-primary w-50">Login</button>
+
+</form>
+
+
+
+ <div class="text-center mt-3">
+          <a href="#">Forgot password?</a> | <a href="{% url 'signup' %}">Create an account</a> <br>
+                  <a href="{% url 'index' %}">Home page</a>
+        </div>
+       </div>
+      </div>
+  </div>
+       <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

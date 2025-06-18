@@ -1,0 +1,222 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href={% static "/css/index.css" %}>
+<title>Dr piyushlab </title>
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    <header class="header">
+        <a href="#home" class="logo">Dr. Piyush lal</a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#people">People</a>
+            <a href="#contact">Contact</a>
+           <a href="{% url 'login' %}">Login</a>
+        </nav>
+    </header>
+
+
+ <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-content">
+
+
+
+
+   <img src="{% static 'media/lab.jpg' %}" alt="Description of image">
+
+    </section>
+
+
+    <!-- About Section -->
+
+    <section id="about" class="about">
+        <div class="about-img">
+            <img src="assets/Profile.jpeg" alt="Profile Image">
+        </div>
+        <div class="about-content">
+            <h3>Hello, Myself</h3>
+            <h1>Dr. Piyush Lal</h1>
+            <h3>And I'm a <span class="multiple-text">Research Faculty</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span></h3>
+            <p>Dr. Piyush Behari Lal, has recently joined as a full-time research faculty.
+	He has 13 years of international research and teaching experience in the
+	field of Microbiology. He has obtained his B. Sc. (Hons) degree in Biological
+	Techniques from L. N. Mithila University as a University topper, M. Sc.
+	degree in Biomedical Sciences from Bundelkhand University, Jhansi, U.P.
+	Thereafter, he moved to USA for an integrated MS-Ph.D. degree at the
+	University of Texas at Dallas in the specialty of molecular and cell biology
+	and postdoctoral training at the University of Wisconsin – Madison, WI,
+	USA, where he continued to work as an Assistant Scientist for the Great
+	Lakes Bioenergy Research Center. His PhD dissertation involved finding
+	redundancy and promiscuity of aminotransferases in Escherichia coli and
+	postdoctoral work involved discovering barriers of genetics in a nonmodel microbe Zymomonas mobilis.
+.	</p>
+            <div class="social-media">
+                <a href="#"><i class="bx bxl-linkedin"></i></a>
+                <a href="#"><i class="bx bxl-github"></i></a>
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+
+
+    </section>
+
+
+
+    <!-- Research Section -->
+    <section id="research" class="research">
+        <h2 class="heading">My <span> Research</span> </h2>
+
+        <div class="research-container">
+            <div class="research-box">
+                <i class="bx bx-code"></i>
+                <h3>Web Development</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique blanditiis laudantium at
+                    repudiandae corporis magni libero doloremque earum porro autem, nemo quod recusandae officiis
+                    molestias.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="research-box">
+                <i class="bx bx-palette"></i>
+                <h3>UI/UX Design</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique blanditiis laudantium at
+                    repudiandae corporis magni libero doloremque earum porro autem, nemo quod recusandae officiis
+                    molestias.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="research-box">
+                <i class="bx bxl-android"></i>
+                <h3>App Development</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique blanditiis laudantium at
+                    repudiandae corporis magni libero doloremque earum porro autem, nemo quod recusandae officiis
+                    molestias.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- People Section -->
+
+    <section id="people" class="people">
+        <div class="people-box">
+            <h2 class="heading">People</h2>
+
+            <div class="wrapper">
+                <div class="people-item">
+                    <img src="assets/01.jpeg" alt="">
+                    <h2>Marilyn</h2>
+                    <div class="rating">
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius reiciendis consequatur officia
+                        recusandae porro at?</p>
+                </div>
+
+                <div class="people-item">
+                    <img src="assets/02.jpeg" alt="">
+                    <h2>Julia</h2>
+                    <div class="rating">
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius reiciendis consequatur officia
+                        recusandae porro at?</p>
+                </div>
+
+                <div class="people-item">
+                    <img src="assets/03.jpeg" alt="">
+                    <h2>Aleksa</h2>
+                    <div class="rating">
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius reiciendis consequatur officia
+                        recusandae porro at?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name">
+                <input type="email" name="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" name="number" placeholder="Phone Number">
+                <input type="text" name="subject" placeholder="Email Subject">
+            </div>
+
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+                <a href="#"><i class="bx bxl-github"></i></a>
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+        </div>
+
+        <p class="copyright">
+            © Monica Taylor - All Rights Reserved
+        </p>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script><style data-typed-js-cursor-css="true">
+        .typed-cursor{
+          opacity: 1;
+        }
+        .typed-cursor.typed-cursor--blink{
+          animation: typedjsBlink 0.7s infinite;
+          -webkit-animation: typedjsBlink 0.7s infinite;
+                  animation: typedjsBlink 0.7s infinite;
+        }
+        @keyframes typedjsBlink{
+          50% { opacity: 0.0; }
+        }
+        @-webkit-keyframes typedjsBlink{
+          0% { opacity: 1; }
+          50% { opacity: 0.0; }
+          100% { opacity: 1; }
+        }
+      </style>
+
+
+</body>
+</html>
